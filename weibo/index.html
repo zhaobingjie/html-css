@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微博留言框</title>
+</head>
+<style type="text/css">
+    /*reset*/
+    body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin: 0;padding: 0;list-style: none;font:12px/1.5 "Arial", "sans-serif", "微软雅黑", "宋体", "Tahoma"}
+    body{
+        padding-top: 50px;
+    }
+    /*common*/
+    .usePic{
+        padding: 5px;border: 1px solid #cccccc;
+    }
+    p{text-indent: 2em;}
+    .demo1,.demo2{margin-bottom: 20px;}
+
+    .demo1{
+        width: 600px;
+        overflow: hidden;
+    }
+    .demo1 .left{
+        float: left;
+        width: 100px;
+    }
+    .demo1 .left img{
+        margin-left: 20px;
+    }
+    .demo1 .right{
+        width: 458px;
+        float: right;
+        border:1px solid #ccc;
+        padding: 20px;
+        background-color: #EEF7FF;
+    }
+    .demo1 .right h6{
+        margin-bottom: 5px;
+    }
+    .demo1 .right span{
+        float:right;
+        top: 10px;
+        color: #999999;margin-top: -10px;
+    }
+    .demo2{
+        width: 600px;
+        overflow: hidden;
+    }
+    .demo2 .usePic{margin-left: 20px;}
+    .demo2 .right{
+        width: 458px;
+        float: right;
+        border:1px solid #ccc;
+        padding: 20px;
+        background-color: #EEF7FF;
+    }
+    .demo2 .right h6{
+        margin-bottom: 5px;
+    }
+    .demo2 .right span{
+        float:right;
+        top: 10px;
+        color: #999999;margin-top: -10px;
+    }
+    .demo3{
+        width: 460px;
+        padding: 20px;
+        position: relative;
+        margin-left: 100px;
+        border:1px solid #ccc;
+        background-color: #EEF7FF;
+    }
+    .demo3 .usePic{
+        float:left;
+        margin: -20px 0 0 -100px;
+    }
+    .demo3 h6{
+        margin-bottom: 5px;
+    }
+    .demo3 span{
+        position: absolute;
+        top:10px;
+        right: 20px;
+        color:#999999;
+    }
+    .demo3 p{
+        line-height: 20px;
+    }
+
+</style>
+<body>
+    <!--demo1-->
+    <div class="demo1">
+        <div class="left">
+            <img src="./images/head01.jpg" alt="avatar" class="usePic">
+        </div>
+        <div class="right">
+            <span>1小时前</span>
+            <h6>樱桃小丸子</h6>
+            <p>奥鹏教育是由教育部高等教育司2001年12月批准立项试点，2005年4月正式批准运营的远程教育公共服务体系，为遍布全国的学员提供学历(专升本，高起专)和非学历教育咨询、报名、学习辅导、课程考试、交费等7X24小时学习支持服务400-810-6736。</p>
+        </div>
+    </div>
+    <!--demo2-->
+    <div class="demo2">
+        <img src="./images/head01.jpg" class="usePic" alt="">
+        <div class="right">
+            <span>1小时前</span>
+            <h6>樱桃小丸子</h6>
+            <p>奥鹏教育是由教育部高等教育司2001年12月批准立项试点，2005年4月正式批准运营的远程教育公共服务体系，为遍布全国的学员提供学历(专升本，高起专)和非学历教育咨询、报名、学习辅导、课程考试、交费等7X24小时学习支持服务400-810-6736。</p>
+        </div>
+    </div>
+    <!--demo3-->
+    <div class="demo3">
+        <img src="./images/head01.jpg" class="usePic" alt="">
+        <h6>樱桃小丸子</h6>
+        <p>奥鹏教育是由教育部高等教育司2001年12月批准立项试点，2005年4月正式批准运营的远程教育公共服务体系，为遍布全国的学员提供学历(专升本，高起专)和非学历教育咨询、报名、学习辅导、课程考试、交费等7X24小时学习支持服务400-810-6736。</p>
+        <span>1小时前</span>
+    </div>
+</body>
+</html>
