@@ -1,0 +1,299 @@
+/*common css*/
+.fl{float: left}
+.fr{float: right}
+.comWidth{width: 1000px;margin: 0 auto;}
+.clear{clear: both;}
+
+.topBar{
+    height: 31px;
+    background-color: #f7f7f7;
+    line-height: 31px;
+}
+.topBar a:hover{
+    color: red;
+}
+.collect{
+    background: url("../images/collection.png") left center no-repeat;
+    padding-left: 19px;
+    font-weight: bold;
+}
+
+.logoBar{
+    height: 85px;
+    background-color: #1d7ad9;
+}
+.logoBar .logo{
+    margin-top: 13px;
+    margin-left: 41px;
+}
+.logoBar .searchBox{
+    width: 430px;
+    margin-top: 23px;
+    margin-left: 185px;
+}
+.logoBar .searchText{
+    width: 350px;
+    height: 35px;
+    background-color: #ffffff;
+    padding:0 5px;
+}
+.logoBar .searchBtn{
+    width: 70px;
+    height: 35px;
+    background-color: #ff8c00;
+    color: #fff;
+}
+.logoBar .searchBtn:hover{
+    cursor: pointer;
+}
+
+.logoBar .shopCar{
+    margin-left: 28px;
+    margin-top: 23px;
+    width: 145px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #FF8C00;
+}
+.logoBar .shopCar .shopText{
+    display: inline-block;
+    width: 87px;
+    height: 35px;
+    text-indent: 40px;
+    background: url("../images/car_03.png") 10px center no-repeat;
+    border-right: #E27A00 solid 1px;
+}
+.logoBar .shopCar .shopText:hover{
+    cursor: pointer;
+}
+.logoBar .shopCar .shopNum{
+    width: 43px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}
+.logoBar .shopCar .shopNum i{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url("../images/sj.png") right center no-repeat;
+}
+
+.navBar{
+    height: 35px;
+    background-color:#1369c0;
+    color: #ffffff;
+}
+.navBar a{
+    color: #ffffff;
+}
+.navBar .shopClass{
+    width: 190px;
+}
+.navBar .shopClass h3{
+    line-height: 35px;
+    text-align: center;
+}
+.navBar .shopClass i{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background: url("../images/down.png") left center no-repeat;
+    margin-left: 10px;
+}
+.navBar .nav li{
+    line-height: 35px;
+    float: left;
+    border-left: 1px solid #cccccc;
+}
+.navBar .nav li:hover{
+    background-color: #4593fd;
+}
+.navBar .nav li a{
+    display: inline-block;
+    height: 35px;
+    padding: 0 35px;
+}
+.navBar .active{
+    background-color: #4593fd;
+}
+.navBar .class_item{
+    background-color: #4593fd;
+    padding: 14px 10px 14px 3px;
+    border-bottom: #3487F2 solid 1px;
+    border-top: #5AA1FE solid 1px;
+}
+.navBar .class_item dt{
+    line-height: 22px;
+    font-size: 14px;
+    background: url("../images/shop_sj.png") right center no-repeat;
+}
+.navBar .class_item .alink{
+    display: inline-block;
+    background: url("../images/aLink.png") left center no-repeat;
+    width: 48px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration:underline;
+}
+.navBar .class_item a{
+    margin-left: 7px;
+}
+/*banner*/
+.mainBanner{
+    width: 810px;
+    height: 346px;
+}
+.banner{
+    overflow: hidden;
+    position: relative;
+}
+.banner .pageMark{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    text-align: center;
+}
+.banner .pageMark a{
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    margin-left: 10px;
+    background-color: #FFF;
+}
+.banner .pageMark .mark{
+    background-color: #ff8c00;
+}
+.smallBanner{
+    width: 190px;
+    height: 400px;
+}
+/*banner end*/
+
+.shopTit{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.shopTit .shopIcon{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background: url("../images/shopIcon.png") left center no-repeat;
+    float: left;
+}
+.shopTit h3{
+    font-size: 24px;
+    float: left;
+    margin-left: 8px;
+    font-weight: normal;
+}
+.shopTit .more{
+    float: right;
+    font-family: "宋体";
+}
+.shopTit .more:hover{
+    color: #1369C0;
+}
+.goods_list{
+    width: 808px;
+    height: 400px;
+    border-right: 1px solid #999;
+    border-top: 1px solid #999;
+}
+.goodsBox{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.goods_list .list_top{
+    height: 280px;
+    overflow: hidden;
+}
+.goods_list .top_goods{
+    float: left;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    width: 201px;
+    height: 279px;
+    text-align: center;
+}
+.goods_list .top_goods img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 86%;
+    height: 218px;
+}
+.goods_list .top_goods h3{
+    font-size: 16px;
+}
+.goods_list .top_goods p{
+    font-size: 14px;
+    color: #FF7300;
+}
+.goods_list .list_bottom{
+    height: 120px;
+    overflow: hidden;
+}
+.goods_list .bottom_goods{
+    float: left;
+    width: 201px;
+    height: 117px;
+    border-bottom: 2px solid #ff7201;
+    border-right: 1px solid #999;
+}
+.goods_list .list_bottom img{
+    float: left;
+    width: 80px;
+    margin: 20px 10px 0 10px;
+}
+.goods_list .list_bottom p{
+    float: left;
+    margin-top: 28px;
+    width: 100px;
+    color: #FF7300;
+}
+.goods_list .list_bottom h3{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/*footer*/
+footer{
+    margin-top: 20px;
+    height: 207px;
+    width: 100%;
+    background-color: #d4d4d4;
+    text-align: center;
+}
+footer .friendLink{
+    padding-top:50px ;
+    height: 30px;
+    line-height: 30px;
+}
+footer .friendLink a{
+    color: #000;
+}
+footer .desc{
+    height: 30px;
+    line-height: 30px;
+}
+footer .web{
+    padding-top: 20px;
+}
+footer .web img{
+    width: 128px;
+    margin-left: 20px;
+}
+
+
+
