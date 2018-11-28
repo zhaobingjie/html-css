@@ -1,4 +1,7 @@
 /*common css*/
+body{
+    font-family: "Microsoft YaHei";
+}
 .fl{float: left}
 .fr{float: right}
 .comWidth{width: 1000px;margin: 0 auto;}
@@ -8,11 +11,13 @@
 .hide{display: none}
 .mb25{margin-bottom: 25px;}
 .mt15{margin-top: 15px}
+.hr-30{height: 30px}
 .star{
     display: inline-block;
     width: 15px;
-    height: 14px;
-    background: url("../images/collection.png") left center no-repeat;
+    height: 22px;
+    background: url("../images/collection.png") left 10px no-repeat;
+    margin: 0 2px;
 }
 .page{
     clear: both;
@@ -395,9 +400,6 @@ footer .web img{
 .productionBox .production_item .desc{
     height: 30px;
     line-height: 30px;
-}
-.productionBox .production_item .desc .star{
-    margin: 0 2px;
 }
 
 /*search*/
@@ -844,6 +846,153 @@ footer .web img{
     padding-left: 5px;
     float: left;
 }
+.goods_content .main_content .content{
+    margin: 25px 0 50px 0;
+    line-height: 22px;
+    font-size: 14px;
+    color: #656565;
+}
+
+/*商品评价*/
+.evaluateBox{
+    width: 100%;
+    border-top: #cccccc 2px solid;
+}
+.evaluateBox h3.title{
+    font-size: 14px;
+    color: #656565;
+    margin-left: 10px;
+    height: 38px;
+    line-height: 38px;
+}
+.evaluateBox .scoreBox{
+    margin-left: 10px;
+}
+.evaluateBox .scoreBox .score em{
+    color: #ff8f00;
+    font-size: 50px;
+    font-style: normal;
+    font-family: "Microsoft YaHei";
+}
+.evaluateBox .scoreBox .score span{
+    font-size: 18px;
+    color: #65657d;;
+}
+.evaluateBox .scoreBox .scoreModel{
+    margin-left: 10px;
+}
+.evaluateBox .scoreBox .model{
+    width: 450px;
+    color: white;
+    background-color: #bdbdbd;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 13px;
+}
+.evaluateBox .scoreBox .modelBox{
+    width: 450px;
+    height: 22px;
+    background-color: white;
+    position: relative;
+    margin-top: 12px;
+}
+.evaluateBox .scoreBox .scoreModel li{
+    float: left;
+    width: 20%;
+}
+.evaluateBox .score_tip{
+    width: 26px;
+    height: 14px;
+    text-align: center;
+    background-color: #7f7f7f;
+    color: white;
+    position: absolute;
+    top: -25px;
+    left: 0%;
+}
+.evaluateBox .score_tip i{
+    border-width: 6px;
+    border-style: solid;
+    border-color: #7f7f7f transparent transparent transparent;
+    display: block;
+    margin-left: 7px;
+    margin-top: -2px;
+    width: 0;
+    height: 0;
+}
+.evaluateBox .scoreModel p{
+    margin-left: 13px;
+    margin-top: 5px;
+}
+.evaluateBox .evaluate_tab_box{
+    width: 100%;
+    height: 32px;
+    background-color: #f2f2f2;
+}
+.evaluateBox .evaluate_tab_box ul{
+    margin-left: 20px;
+}
+.evaluateBox .evaluate_tab_box li{
+    float: left;
+    line-height: 32px;
+    color: #656565;
+    margin-right: 50px;
+}
+.evaluateBox .evaluate_tab_box li.active a{
+    color: #317de6;
+    font-weight: bold;
+    display: inline-block;
+    height: 32px;
+    border-bottom: #317de6 2px solid;
+    padding: 0 5px;
+}
+.evaluateBox .evaluate_tab_box .order{
+    float: right;
+    margin-right: 5px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 20px 0 5px;
+    border: #cccccc 1px solid;
+    color: #656565;
+    margin-top: 3px;
+    background: url("../images/sort.png") 92% center no-repeat;
+}
+.evaluateBox .eval_item{
+    width: 100%;
+    color: #666;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.evaluateBox .eval_item .user_info{
+    width: 25%;
+    text-align: center;
+}
+.evaluateBox .eval_item .user_info p{
+    line-height: 20px;
+}
+.evaluateBox .eval_item .item_evaluate_content{
+    width: 75%;
+}
+.evaluateBox .eval_item .item_evaluate_content p{
+    line-height: 30px;
+}
+.evaluateBox .eval_item .item_evaluate_content p .eva-count{
+    color: black;
+    font-weight: bold;
+    padding-left: 20px;
+}
+.evaluateBox .eval_item .item_evaluate_content p .ctime{
+    float: right;
+    margin-right: 30px;
+}
+.evaluateBox .eval_item .item_evaluate_content p.eva_hit span{
+    cursor: pointer;
+    color: #1369C0;
+    margin-right: 20px;
+}
+
 
 
 
