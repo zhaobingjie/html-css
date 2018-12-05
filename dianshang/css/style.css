@@ -11,6 +11,7 @@ body{
 .hide{display: none}
 .mb25{margin-bottom: 25px;}
 .mt15{margin-top: 15px}
+.mt30{margin-top: 30px}
 .hr-30{height: 30px}
 .star{
     display: inline-block;
@@ -103,7 +104,7 @@ body{
     cursor: pointer;
 }
 .logoBar .shopCar .shopNum{
-    width: 43px;
+    width: 42px;
     display: inline-block;
     text-align: right;
     padding-right: 10px;
@@ -993,6 +994,201 @@ footer .web img{
     margin-right: 20px;
 }
 
+/*购物车*/
+.progress_box{
+    margin-top: 25px;
+    width: 410px;
+    height: 50px;
+}
+.progress_box .progress{
+    width: 378px;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 22px;
+}
+.progress_box .step{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #90bae4;
+    border-radius:10px;
+    float: left;
+    text-align: center;
+    color: #1d7ad9;
+    font-weight: bold;
+}
+.progress_box .line{
+    display: inline-block;
+    width: 140px;
+    height: 4px;
+    background-color: #90bae4;
+    float: left;
+    margin-top: 8px;
+}
+.progress_box .progress_title{
+    margin-top: 5px;
+    width: 400px;
+}
+.progress_box .progress_title li{
+    float: left;
+    font-weight: bold;
+    color: white;
+    width: 33.3%;
+}
+.progress_box .progress_title .p2{
+    text-indent: 24px;
+}
+.progress_box .progress_title .p3{
+    text-indent: 50px;
+}
+.progress_box span.active{
+    background-color: #fff100;
+}
+.progress_box li.active{
+    color: #fff100;
+}
+
+.shop_item{
+    border: #ccc 1px solid;
+    overflow: hidden;
+    color: #666666;
+}
+.shop_item .item_title{
+    height: 31px;
+    padding-left: 10px;
+    background: url("../images/jpg/grey.jpg") left center repeat-x;
+    font: 16px/31px "Microsoft YaHei";
+    border-bottom: #ccc 1px solid;
+}
+.shop_item .item_content{
+    padding: 25px  30px;
+}
+.shop_item .item_content em{
+    font-style: normal;
+    color: red;
+}
+.shop_item .item_content li{
+    overflow: hidden;
+}
+.shop_item .item_content li p:nth-of-type(1){
+    float: left;
+    display: inline-block;
+    width: 75px;
+    margin-right: 20px;
+    height: 34px;
+    line-height: 34px;
+}
+.shop_item .item_content li p:nth-of-type(1) input{
+    vertical-align: middle;
+}
+.shop_item .item_content li p:nth-of-type(2){
+    float: left;
+    line-height: 34px;
+}
+.shop_item .item_content li p:nth-of-type(2) input{
+    border: #ccc 1px solid;
+    height: 22px;
+    font-size: 12px;
+    color: #888;
+    padding-left: 3px;
+}
+.shop_item .more_con{
+    font-style: normal;
+    padding: 0 5px;
+}
+.shop_item .selectModel{
+    border: #ccc 1px solid;
+    padding: 0px 10px;
+}
+.shop_item .confirm_btn{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    padding: 10px 22px;
+    background-color: #4493fc;
+    color: white;
+    cursor: pointer;
+}
+.wx-bg{
+    display: inline-block;
+    background: url("../images/jpg/chart.jpg") left center no-repeat;
+    width: 30px;
+    height: 21px;
+    vertical-align: middle;
+}
+.shop_item .btn_box{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.shop_item .btn_box .save{
+    padding: 6px 21px;
+    background-color: #4391fc;
+    color: white;
+}
+.shop_item .btn_box .reset{
+    padding: 5px 20px;
+    background-color: #f0f0f0;
+    border: #ccc 1px solid;
+    margin-left: 10px;
+}
+.shop_item .shopcar{
+    width: 100%;
+}
+.shop_item .shopcar th{
+    text-align: left;
+    height: 41px;
+    line-height: 41px;
+    border-bottom: #cccccc 1px solid;
+}
+.shop_item .th-first{
+    text-indent: 25px;
+}
+.shop_item .cover{
+    width: 25%;
+    height: 82px;
+    overflow: hidden;
+}
+.shop_item .cover img{
+    padding: 10px 10px 10px 25px;
+}
+.shop_item .desc{
+    width: 75%;
+}
+.shop_item .desc p{
+    height: 50px;
+    line-height: 18px;
+    color: #666;
+    overflow: hidden;
+}
+.shop_item .desc p.name{
+    padding-top: 10px;
+}
+.shop_item .shopcar .tab_top{
+    vertical-align: top;
+    padding-top: 20px;
+}
+.shop_item .shopcar .item_total{
+    color: red;
+    font-weight: bold;
+}
+.shop_item .shopcar tr{
+    border-bottom: #cccccc 1px solid;
+}
+.shop_item .pay_box{
+    float: right;
+    margin: 45px 25px 20px 0;
+    text-align: right;
+}
+.shop_item .pay_box .total{
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+}
+.shop_item .pay_box .dopay{
+    color: white;
+    background-color: red;
+    padding: 8px 35px;
+    cursor:pointer;
+}
 
 
 
