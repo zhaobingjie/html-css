@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <title>无标题文档</title>
+    <style type="text/css">
+        .clearfix {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        /*.imgBox{*/
+        /*position: relative;*/
+        /*width: 1500px;*/
+        /*height: 1500px;*/
+        /*border: 1px solid #ccc;*/
+        /*display: table-cell;*/
+        /*background: #eee;*/
+        /*vertical-align: middle;*/
+
+        /*}*/
+        /*.imgBox img{*/
+        /*border: none;*/
+        /*max-width: 100%;*/
+        /*max-height: 100%;*/
+        /*display: block;*/
+        /*margin: auto;*/
+        /*}*/
+        .imgBox {
+            float: right;
+            width: 1200px;
+            height: 400px;
+            background-color: #ccc;
+            line-height: 400px;
+            vertical-align: middle;
+            text-align: center
+        }
+
+        .imgBox img {
+            vertical-align: middle;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="row_p"><a href="javascript:void(0)" value="1" class="is_province">不限</a><a href="javascript:void(0)"
+                                                                                       value="2"
+                                                                                       class="is_province">北京市</a><a
+        href="javascript:void(0)" value="3" class="is_province">上海市</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="4" class="is_province">天津市</a><a href="javascript:void(0)"
+                                                                                        value="5" class="is_province">重庆市</a><a
+        href="javascript:void(0)" value="6" class="is_province">河北省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="7" class="is_province">山西省</a><a href="javascript:void(0)"
+                                                                                        value="8" class="is_province">内蒙古</a><a
+        href="javascript:void(0)" value="9" class="is_province">辽宁省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="10" class="is_province">吉林省</a><a href="javascript:void(0)"
+                                                                                         value="11" class="is_province">黑龙江省</a><a
+        href="javascript:void(0)" value="12" class="is_province">江苏省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="13" class="is_province">浙江省</a><a href="javascript:void(0)"
+                                                                                         value="14" class="is_province">安徽省</a><a
+        href="javascript:void(0)" value="15" class="is_province">福建省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="16" class="is_province">江西省</a><a href="javascript:void(0)"
+                                                                                         value="17" class="is_province">山东省</a><a
+        href="javascript:void(0)" value="18" class="is_province">河南省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="19" class="is_province">湖北省</a><a href="javascript:void(0)"
+                                                                                         value="20" class="is_province">湖南省</a><a
+        href="javascript:void(0)" value="21" class="is_province">广东省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="22" class="is_province">广西</a><a href="javascript:void(0)"
+                                                                                        value="23" class="is_province">海南省</a><a
+        href="javascript:void(0)" value="24" class="is_province">四川省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="25" class="is_province">贵州省</a><a href="javascript:void(0)"
+                                                                                         value="26" class="is_province">云南省</a><a
+        href="javascript:void(0)" value="27" class="is_province">西藏</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="28" class="is_province">陕西省</a><a href="javascript:void(0)"
+                                                                                         value="29" class="is_province">甘肃省</a><a
+        href="javascript:void(0)" value="30" class="is_province">青海省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="31" class="is_province">宁夏</a><a href="javascript:void(0)"
+                                                                                        value="32" class="is_province">新疆</a><a
+        href="javascript:void(0)" value="33" class="is_province">台湾省</a></div>
+<div class="row_p"><a href="javascript:void(0)" value="34" class="is_province">香港</a><a href="javascript:void(0)"
+                                                                                        value="35" class="is_province">澳门</a><a
+        href="javascript:void(0)" value="3358" class="is_province">钓鱼岛</a></div>
+<div class="row_p">
+    index.php?m=content&c=index&a=test:448
+    <div class="zbj-box fk-picker" style="display: none">
+        <div class="fk-tabcons">
+            <div class="zbj-province-opts">
+                <div class="row_p">
+                    <a href="javascript:void(0)" value="1" class="is_province">不限</a>
+                    <a href="javascript:void(0)" value="2" class="is_province">北京市</a>
+                    <a href="javascript:void(0)" value="3" class="is_province">上海市</a>
+                </div>
+                <div class="row_p">
+                    <a href="javascript:void(0)" value="4" class="is_province">天津市</a>
+                    <a
+                        href="javascript:void(0)" value="5" class="is_province">重庆市</a>
+                    <a href="javascript:void(0)" value="6" class="is_province">河北省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="7" class="is_province">山西省</a><a
+                        href="javascript:void(0)" value="8" class="is_province">内蒙古</a><a href="javascript:void(0)"
+                                                                                          value="9" class="is_province">辽宁省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="10" class="is_province">吉林省</a><a
+                        href="javascript:void(0)" value="11" class="is_province">黑龙江省</a><a href="javascript:void(0)"
+                                                                                            value="12"
+                                                                                            class="is_province">江苏省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="13" class="is_province">浙江省</a><a
+                        href="javascript:void(0)" value="14" class="is_province">安徽省</a><a href="javascript:void(0)"
+                                                                                           value="15"
+                                                                                           class="is_province">福建省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="16" class="is_province">江西省</a><a
+                        href="javascript:void(0)" value="17" class="is_province">山东省</a><a href="javascript:void(0)"
+                                                                                           value="18"
+                                                                                           class="is_province">河南省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="19" class="is_province">湖北省</a><a
+                        href="javascript:void(0)" value="20" class="is_province">湖南省</a><a href="javascript:void(0)"
+                                                                                           value="21"
+                                                                                           class="is_province">广东省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="22" class="is_province">广西</a><a
+                        href="javascript:void(0)" value="23" class="is_province">海南省</a><a href="javascript:void(0)"
+                                                                                           value="24"
+                                                                                           class="is_province">四川省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="25" class="is_province">贵州省</a><a
+                        href="javascript:void(0)" value="26" class="is_province">云南省</a><a href="javascript:void(0)"
+                                                                                           value="27"
+                                                                                           class="is_province">西藏</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="28" class="is_province">陕西省</a><a
+                        href="javascript:void(0)" value="29" class="is_province">甘肃省</a><a href="javascript:void(0)"
+                                                                                           value="30"
+                                                                                           class="is_province">青海省</a>
+                </div>
+                <div class="row_p"><a href="javascript:void(0)" value="31" class="is_province">宁夏</a><a
+                        href="javascript:void(0)" value="32" class="is_province">新疆</a><a href="javascript:void(0)"
+                                                                                          value="33"
+                                                                                          class="is_province">台湾省</a>
+                </div>
+                <div class="row_p">
+                    <a href="javascript:void(0)" value="34" class="is_province">香港</a>
+                    <a href="javascript:void(0)" value="35" class="is_province">澳门</a>
+                    <a href="javascript:void(0)" value="3358" class="is_province">钓鱼岛</a>
+                </div>
+                <div class="row_p"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

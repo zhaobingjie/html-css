@@ -1,0 +1,5 @@
+1.a标签无法继承父级div样式,因为a标签自带样式,根据样式就近原则,所有无法继承
+2.html 可通过边框线来画三角形
+3.<script>定义了客户端脚本    <noscript>定义了不支持脚本浏览器输出的文本
+4.table表格属性:border-collapse:collapse; 使边框重合
+5.overflow: auto:如果内容被修剪,则滚动显示,scroll:无论内容是否被修剪,都显示滚动条

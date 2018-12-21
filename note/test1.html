@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html代码笔记</title>
+    <style>
+        body{padding: 0;margin: 0;}
+        /*p{margin: 0}*/
+        .con{
+            width: 100%;
+            min-height: 100px;
+            border: black 1px solid;
+            overflow: hidden;
+        }
+        .sj{
+            display: inline-block;
+            width: 1px;
+            border-top: red 20px solid;
+            border-left: transparent 20px solid;
+            border-right: transparent 20px solid;
+            margin: 10px;
+        }
+        @media (max-width: 1100px){
+            .phone_hide{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div style="position: fixed;top: 70%;right: 0;width: 50px;height: 140px;background-color: #0F67A1">
+    <p style="margin: 0;padding: 6px 17px;color: white">测试固定定位</p>
+</div>
+<div class="con">
+    <img src="static/2926.png" alt="幸福工程" title="爱在天津" usemap="#showpeople">
+    <map name="showpeople">
+        <!--shape指的是点击区域的形状(rect=矩形,circle=圆)，coords指的应该是链接区域在图片中的坐标-->
+        <area shape="rect" coords="20 6 231 326" href="http://www.baidu.com" alt="百度" onmouseover="alert('I`m watching you!')">
+    </map>
+</div>
+<div style="position: sticky;top: 0;height: 40px;background-color: #0F67A1">
+    <p style="margin: 0;padding: 6px 17px;color: white">测试粘性定位</p>
+</div>
+<div class="con">
+    <iframe src="http://www.baidu.com" frameborder="0" width="500px" height="300px" name="tcy"></iframe>
+    <p><a href="http://www.techuangyi.com" target="tcy">特创易</a></p>
+</div>
+<div class="con">
+    <div style="float: left;width: 49%;overflow: hidden;">
+        <del>这是错误的</del>
+        <ins>插入一段话</ins>
+        <p style="text-decoration: overline;">测试横线</p>
+        <p style="text-decoration: underline;">测试横线</p>
+        <p style="text-decoration: line-through;">测试横线</p>
+        <p style="letter-spacing: 20px;">测试字间距</p>
+        <p style="word-spacing: 20px;">hello world</p>
+    </div>
+    <span class="line"></span>
+    <div style="float: left;width: 49%;overflow: hidden;border-left: black 2px solid">
+        <p>文字和图片对齐方式<img src="static/213.jpg" alt="" width="100" height="50" >文字和图片对齐方式</p>
+        <p>文字和图片对齐方式<img src="static/213.jpg" alt="" width="100" height="50" style="vertical-align: top;">文字和图片对齐方式</p>
+        <p>文字和图片对齐方式<img src="static/213.jpg" alt="" width="100" height="50" style="vertical-align: bottom;">文字和图片对齐方式</p>
+        <p>文字和图片对齐方式<img src="static/213.jpg" alt="" width="100" height="50" style="vertical-align: middle;">文字和图片对齐方式</p>
+    </div>
+</div>
+<div class="con">
+    <div style="float: left;width: 49%;overflow: hidden;">
+        <div style="width: 200px;height: 50px;border: red 2px solid;margin: 10px 5px"></div>
+        <div style="width: 200px;height: 50px;border: red 2px dashed;margin: 10px 5px"></div>
+        <div style="width: 200px;height: 50px;border: red 2px dotted;margin: 10px 5px"></div>
+    </div>
+    <span class="line"></span>
+    <div style="float: left;width: 49%;overflow: hidden;border-left: black 2px solid">
+        <span class="sj"></span>
+    </div>
+</div>
+<div class="con">
+    <div style="float: left;width: 500px;height: 30px;background-color: #0F67A1;color: white">
+        浏览器最大宽度达到1100px时才会出现下个粉色div
+    </div>
+    <div style="float: left;width: 500px;height: 30px;background-color: pink;" class="phone_hide"></div>
+</div>
+</body>
+</html>
