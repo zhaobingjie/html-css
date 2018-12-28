@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #demo1{width: 200px;height: 200px;background-color: #0A8CD2;}
+        #demo2{width: 50px;height: 50px;background-color: red;}
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../common/jquery.min.js"></script>
+    <script src="../common/location.js"></script>
+    <script src="static/test.js"></script>
+</head>
+<body>
+<p onclick="testobj();">让华为和认可我奥委会日而后人非 </p>
+
+<div id="demo1">
+    <a href="http://www.baidu.com" ><div id="demo2"></div></a>
+</div>
+<script>
+    function testmodel(){
+        var _str = 'werjowrjw';
+        var _arr = new Array(1,2,3,4);
+        var _number = 123;
+        var _obj = {name:'jack',age:18};
+        console.log(typeof _str);
+        console.log(typeof _arr);
+        console.log(typeof _number);
+        console.log(typeof _obj);
+        if(Array.isArray(_arr)){
+            alert('介四数组啊');
+        }
+    }
+    var demo = {checkAuth:function () {
+            return  parseInt(Math.round(Math.random()));
+        }};
+    demo.name = 'jack';
+    demo.sex = 'm';
+    demo.age = '17';
+    demo.getInfo = function () {
+        return 'name = '+ demo.name + ' and age = '+ demo.age;
+    };
+    function testobj(){
+        if(demo.checkAuth()){
+            console.log(demo.getInfo());
+        }else{
+            console.log('no auth');
+        }
+    }
+    window.onload = function (ev) {
+        var loc = new Location();
+        var area = loc.find(0);
+        console.log(area);
+        for(item in area){
+            console.log(item);
+            console.log(area[item]);
+        }
+
+
+        //------------------------------ try catch throw    ------------------------------
+        var txt="";
+        function message()
+        {
+            try {
+                adddlert("Welcome guest!");
+            } catch(err) {
+                txt="本页有一个错误。\n\n";
+                txt+="错误描述：" + err.message + "\n\n";
+                txt+="点击确定继续。\n\n";
+                alert(txt);
+            }
+        }
+        message();
+
+        //------------------------------    匿名函数    ------------------------------
+        //匿名函数
+        var myfun = function (name) {
+            alert('my name is '+ name);
+        }
+        myfun('jack');
+        //------------------------------    自执行函数   -----------------------------
+        //自执行函数
+        (function (arg1,arg2) {
+            alert(arg1+' - '+arg2);
+        }(1,2))
+        //------------------------------    闭包函数    ------------------------------------------------------
+        //闭包函数这个叫作 JavaScript 闭包。它使得函数拥有私有变量变成可能。计数器受匿名函数的作用域保护，只能通过 add 方法修改。
+        //counter变量因为被下层函数引用,所以自执行声明的变量,执行过后不会被销毁
+        var add = (function () {
+            var counter = 0;
+            return function () {return counter += 1;}
+        })();
+        console.log(add());
+        console.log(add());
+        console.log(add());
+        function fun_init(){
+            var t = 1;
+            return function(){ return t++; }
+        }
+        var test =  fun_init();
+        console.log(test());
+        console.log(test());
+        console.log(test());
+        //---------------------------------------------------------------------------------------------------------------
+    }
+
+    /*事件传递有两种方式：冒泡与捕获。
+        事件传递定义了元素事件触发的顺序。 如果你将 <p> 元素插入到 <div> 元素中，用户点击 <p> 元素, 哪个元素的 "click" 事件先被触发呢？
+        在 冒泡 中，内部元素的事件会先被触发，然后再触发外部元素，即： <p> 元素的点击事件先触发，然后会触发 <div> 元素的点击事件。
+        在 捕获 中，外部元素的事件会先被触发，然后才会触发内部元素的事件，即： <div> 元素的点击事件先触发 ，然后再触发 <p> 元素的点击事件。
+        默认值为 false, 即冒泡传递，当值为 true 时, 事件使用捕获传递*/
+    var d1 = document.getElementById('demo1');
+    var d2 = document.getElementById('demo2');
+    d1.addEventListener('click',function(){
+        alert('this is demo1');
+        return false;
+    });
+    d2.addEventListener('click',function (ev) {
+        alert('this is demo2');
+        //------------------ 阻止冒泡  两种方式均可(环境:ie11,Chrome,Firefox,360)------------------------------
+        // ev.cancelBubble = true; //低版本ie可能只适用次属性
+        ev.stopPropagation();
+        //------------------ 阻止默认事件 (环境:ie11,Chrome,Firefox,360)------------------------------
+        ev.preventDefault();
+    });
+</script>
+</body>
+</html>
