@@ -444,6 +444,21 @@
 <script src="js/common.js" type="text/javascript"></script>
 <script>
     $(function () {
+        function header_init () {
+            $(document).scroll(function () {
+                var obj = $('.top_header');
+                var before = $(document).scrollTop();
+                $(document).scroll(function () {
+                   var after =  $(document).scrollTop();
+                   if(before < after){
+                       obj.stop().fadeOut('slow');
+                   }else if(before > after) {
+                       obj.stop().fadeIn('slow');
+                   }
+                });
+            });
+        }
+        header_init();
         $('.app-icon').mouseover(function () {
             $(this).next('img').show();
         });
